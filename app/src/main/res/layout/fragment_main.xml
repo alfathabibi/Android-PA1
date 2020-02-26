@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   >
+    <Button
+            android:text="@string/persegi_panjang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonPersegiPanjang" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+    <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                                android:id="@+id/guideline"
+                                                android:orientation="horizontal"
+                                                app:layout_constraintGuide_percent="0.5"/>
+    <Button
+            android:text="@string/segitiga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSegitiga" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

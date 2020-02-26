@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">PA1</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="persegi_panjang">Persegi Panjang</string>
+    <string name="segitiga">Segitiga</string>
+    <string name="panjang">Panjang</string>
+    <string name="lebar">Lebar</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="alas">Alas</string>
+    <string name="hitung">Hitung</string>
+    <string name="luas">Luas = </string>
+    <string name="keliling">Keliling = </string>
+    <string name="share">Share</string>
+    <string name="nama">Muhammad Alfath Abibi</string>
+    <string name="nim">6706183049</string>
+    <string name="kelas">D3RPLA 4203</string>
+    <string name="about">About</string>
+    <string name="isi_form">Silakan Isi Semua Form</string>
+    <string name="share_hasil">Hasil Luas : %1s, Hasil Keliling : %2s</string>
+
+</resources>

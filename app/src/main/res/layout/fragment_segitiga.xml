@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".SegitigaFragment">
+<androidx.constraintlayout.widget.ConstraintLayout
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   >
+    <EditText
+            android:layout_width="386dp"
+            android:layout_height="45dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextAlas"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:hint="@string/tinggi" app:layout_constraintHorizontal_bias="0.571"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toBottomOf="@+id/editTextTinggi"/>
+    <EditText
+            android:layout_width="386dp"
+            android:layout_height="45dp"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editTextTinggi"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp" app:layout_constraintTop_toTopOf="parent" android:hint="@string/alas"/>
+    <Button
+            android:text="@string/hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonHitungSegitiga" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/editTextAlas" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:text="@string/luas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewLuasSegitiga" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/buttonHitungSegitiga"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"/>
+    <TextView
+            android:text="@string/keliling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewKelilingSegitiga" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLuasSegitiga"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewHasilLuasS"
+            app:layout_constraintTop_toTopOf="@+id/textViewLuasSegitiga"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewLuasSegitiga"
+            app:layout_constraintStart_toEndOf="@+id/textViewLuasSegitiga" android:layout_marginStart="8dp"
+            tools:text="...."/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textViewHasilKelilingS"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewKelilingSegitiga"
+            app:layout_constraintTop_toTopOf="@+id/textViewKelilingSegitiga"
+            app:layout_constraintStart_toEndOf="@+id/textViewKelilingSegitiga" android:layout_marginStart="8dp"
+            tools:text="...."/>
+    <Button
+            android:text="@string/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonShareS" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/textViewKelilingSegitiga"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
